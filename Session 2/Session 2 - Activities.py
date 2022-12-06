@@ -61,3 +61,44 @@ else:
     print (f"You have added {num1} and {num2} together. Your result is {result}, which is an odd number.")
 
 # Activity 7
+num = 1001
+num_string = str(num)
+num_reverse = num_string[::-1]
+if num_string == num_reverse:
+    print(f"The number {num} is a palindrome!")
+else:
+    print(f"The number {num} is NOT a palindrome!")
+
+# Activity 8
+def coffee_order(size, drink_type):
+    print (f"You have ordered a {size} {drink_type}.")
+
+coffee_order("Large", "Chai Latté")
+coffee_order("Small", "Mocha")
+coffee_order("Medium", "Cappuccino")
+
+# ---------------------------------------- Part 2 ----------------------------------------
+
+# Activity 1
+order_count = 1
+def take_order(topping1, topping2, topping3):
+    global order_count
+    print (f"Order number {order_count} is a pizza with {topping1}, {topping2} and {topping3} on it.")
+    order_count += 1
+
+take_order("Pepperoni", "Chicken", "Sausage")
+take_order("Peppers", "Onion", "Sweetcorn")
+take_order("Ham", "Mushroom", "Beef")
+
+# Activity 2
+def cash_machine(pin_number, amount):
+    if pin_number != 1234:
+        print ("Incorrect pin number.")
+    elif pin_number == 1234 and amount <= 350 :
+        print (f"You have successfully withdrawn £{amount}. You have £{350 - amount} remaining in your bank account.")
+    else:
+        print ("You lack the sufficent funds for this withdrawal.")
+    
+cash_machine (4321, 250)
+cash_machine (1234, 250)
+cash_machine (1234, 400)
