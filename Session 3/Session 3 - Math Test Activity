@@ -1,0 +1,107 @@
+# This makes sure that the test can check to see which student to assign the current name and score to.
+student_number = 1
+
+# This stores the different students' scores.
+student_1_score = 0
+student_2_score = 0
+student_3_score = 0
+
+def test(score):
+    score = 0
+    global student_1_score
+    global student_2_score
+    global student_3_score
+
+    # Question 1
+    print ("Question 1: ")
+    q1 = input ("What is 32 + 45?: ")
+    if q1 == "77":
+        score += 1
+    else:
+        score += 0
+
+    # Question 2
+    print ("Question 2: ")
+    q2 = input ("What is 3²?: ")
+    if q2 == "9":
+        score += 1
+    else:
+        score += 0
+
+    # Question 3
+    print ("Question 3: ")
+    q3 = input ("What is 110 ÷ 11?: ")
+    if q3 == "10":
+        score += 1
+    else:
+        score += 0
+    
+    # Question 4
+    print ("Question 4: ")
+    q4 = input ("What is 320 - 130?: ")
+    if q4 == "190":
+        score += 1
+    else:
+        score += 0
+
+    # Question 5
+    print ("Question 5: ")
+    q5 = input ("What is 31 x 5?: ")
+    if q5 == "155":
+        score += 1
+    else:
+        score += 0
+
+    if student_number == 1:
+        student_1_score = score
+    if student_number == 2:
+        student_2_score = score
+    else:
+        student_3_score = score
+
+# ----- Below is what's printed in the terminal outside the tests
+
+print ()
+print ("Welcome to your maths tests.")
+print ()
+
+# Quiz for Student 1
+print ("Student 1: ")
+student_1_name = input ("Please enter your name: ")
+test(0)
+print (f"Your score is: {student_1_score}")
+student_number = 2
+print ()
+
+# Quiz for Student 2
+print ("Student 2: ")
+student_2_name = input ("Please enter your name: ")
+test(0)
+print (f"Your score is: {student_2_score}")
+student_number = 3
+print ()
+
+# Quiz for Student 3
+print ("Student 3: ")
+student_3_name = input ("Please enter your name: ")
+test(0)
+print (f"Your score is: {student_3_score}")
+print ()
+
+# This compiles the students' names and scores into variables that correspond with each student.
+student_1_results = (student_1_name, student_1_score)
+student_2_results = (student_2_name, student_2_score)
+student_3_results = (student_3_name, student_3_score)
+
+# This compiles the results into a list. The another list is made by sorting them in ascending order.
+student_list    = [student_1_results, student_2_results, student_3_results]
+sorted_list     = sorted(student_list)
+
+# Results
+print ("Results: ")
+print ("1st", *sorted_list[0], sep=", ")
+print ("2nd", *sorted_list[1], sep=", ")
+print ("3rd", *sorted_list[2], sep=", ")
+
+print ()
+print ("Thank you for participating in this test.")
