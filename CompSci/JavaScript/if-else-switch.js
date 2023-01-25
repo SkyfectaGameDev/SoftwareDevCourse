@@ -134,3 +134,136 @@ switch (food)
     default:
         console.log("Sure, why not.")
 }
+console.log();
+
+// ----- Pizza Toppings Activity -----
+let topping = "pepperoni";
+
+switch (topping)
+{
+    case "pepperoni":
+    case "chicken":
+    case "bacon":
+    case "sweetcorn":
+        console.log("One of my favourite pizza toppings!");
+        break;
+    case "peppers":
+    case "beef":
+        console.log("Not my favourite, but I don't mind it.");
+        break;
+    case "onion":
+    case "anchovies":
+        console.log("Keep those away from my pizza!");
+}
+console.log();
+
+// ----- Password Activity -----
+let password = "Password_123";
+
+if (password.length <= 8)
+{
+    console.log("Password is too short.");
+}
+else
+{
+    console.log(password);
+}
+console.log();
+
+// ----- Fizz Buzz Activity -----
+let num = 15;
+
+if (num % 3 == 0 && num % 5 != 0)
+{
+    console.log("Fizz");
+}
+else if (num % 5 == 0 && num % 3 != 0)
+{
+    console.log("Buzz");
+}
+else if (num % 3 == 0 && num % 5 == 0)
+{
+    console.log("Fizz Buzz");
+}
+else
+{
+    console.log(num);
+}
+console.log();
+
+// ----- Work Time Activity -----
+let time = 8;
+let placeOfWork = 9;
+let townOfHome = 7;
+
+if (time <= townOfHome)
+{
+    console.log(`At ${time}am, I will be at home.`);
+}
+else if (time >= placeOfWork)
+{
+    console.log(`At ${time}am, I will be at work.`);
+}
+else
+{
+    console.log(`At ${time}am, I will be commuting.`);
+}
+console.log();
+
+// ----- Last Vowel Activity -----
+let lastVowel = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
+
+console.log("Last vowel positions in rising order:")
+
+console.log("a:", lastVowel.lastIndexOf("a"));
+console.log("o:", lastVowel.lastIndexOf("o"));
+console.log("u:", lastVowel.lastIndexOf("u"));
+console.log("e:", lastVowel.lastIndexOf("e"));
+console.log("i:", lastVowel.lastIndexOf("i"));
+console.log();
+
+// ----- Last & First Letter Activity -----
+let word = "this string compares if the last letter is the same as the first";
+let start = word.charAt(0);
+let end = word.charAt(word.length-1);
+
+console.log("The first letter is the same as the last:");
+
+if (start == end)
+{
+    console.log(true);
+}
+else
+{
+    console.log(false);
+}
+console.log()
+
+// ----- Even Or Odd Activity -----
+let num1 = 20;
+let num2 = 30;
+let sum = (num1 + num2);
+
+if (sum % 2 == 0)
+{
+    console.log(sum);
+}
+else
+{
+    console.log(num1 * num2);
+}
+console.log()
+
+// ----- Palindrome Activity -----
+num = "4302";
+
+console.log(`${num} backwards is ${num.charAt(3)}${num.charAt(2)}${num.charAt(1)}${num.charAt(0)}`)
+
+if (num.charAt(0) == num.charAt(3) && num.charAt(1) == num.charAt(2))
+{
+    console.log(num, "is a palindrome!")
+}
+else
+{
+    console.log(num, "is not a palindrome.")
+}
