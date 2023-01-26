@@ -110,7 +110,7 @@ console.log("Generating 6 random numbers:")
 while(numCount < 6)
 {
     console.log(Math.random()* 10);
-    numCount ++;
+    numCount++;
 }
 console.log();
 
@@ -142,8 +142,7 @@ let randNum = 0;
 console.log("Random numbers divisible by 7 check:")
 while(numCount < 6)
 {
-    randNum = Math.random()* 30;
-    randNum = randNum.toFixed(0);
+    randNum = Math.floor(Math.random()* 30);
 
     if(randNum % 7 == 0)
     {
