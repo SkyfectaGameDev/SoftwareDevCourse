@@ -10,25 +10,23 @@ console.log("Replace".replace("e", "5"));               // Example of how to rep
 console.log("Replace All".replaceAll("l", "p"));        // Example of using replaceAll to replace all of the stated characters in the string with another.
 console.log("force to uppercase".toUpperCase());        // Example of how to force all letters in a string to be uppercase.
 console.log("FORCE TO LOWERCASE".toLowerCase());        // Example of how to force all letters in a string to be lowercase.
-console.log("concat".concat("Example"));
-console.log(" Trim ".trim());
-console.log(" Trim Start".trimStart());
-console.log("Trim End ".trimEnd());
-console.log("Pad Start".padStart(12, "_"));
-console.log("Pad End".padEnd(12, "_"));
-console.log("Char At".charAt(3));
-console.log("Char Code At".charCodeAt(3));
-// split
-// slice
-// includes
-// startsWith
-// endsWith
-// includes
-// indexOf
-// lastIndexOf
-// match
-// search
-// repeat
+console.log("concat".concat("Example"));                // Example of using concat to add on to the beginning of a string.
+console.log(" Trim ".trim());                           // Example of using trim to remove blank spaces from the beginning and end of a string.
+console.log(" Trim Start".trimStart());                 // Example of using trimStart to remove the blank spaces from the start of a string.
+console.log("Trim End ".trimEnd());                     // Example of using trimEnd to remove the blank spaces from the end of a string.
+console.log("Pad Start".padStart(12, "_"));             // Example of using padStart to increase the amount of characters to the number desired using the character(s) given by adding to the start of the string.
+console.log("Pad End".padEnd(12, "_"));                 // Example of using padEnd to increase the amount of characters to the number desired using the character(s) given by adding to the end of the string.
+console.log("Char At".charAt(3));                       // Example of using charAt to read a character from a string from the selected index position.
+console.log("Char Code At".charCodeAt(3));              // Example of using charCodeAt to read the character code of the character from the selected index position in a string.
+console.log("Split".split(""));                         // Example of using split to seperate a string into an array of individual characters.
+console.log("Includes".includes("p"));                  // Example of using includes to return a boolean that states whether or not the string includes the selected character.
+console.log("Starts With".startsWith("S"));             // Example of using startsWith to return a boolean that states whether or not the string starts with the selected character.
+console.log("Ends With".endsWith("h"));                 // Example of using endsWith to return a boolean that states whether or not the string ends with the selected character.
+console.log("Index Of".indexOf("e"));                   // Example of using indexOf to locate the first index position of the stated character within a string.
+console.log("The Last Index Of".lastIndexOf("e"));      // Example of using lastIndexOf to locate the last index position of the stated character within a string.
+console.log("Match".match(/[A-Z]/g));                   // Unsure
+console.log("Begin Search".search("e"));                // Example of using search to locate the index position of the stated character.
+console.log("Repeat".repeat(3));                        // Example of using repeat to expand the string to repeat itself by the number of times stated.
 
 console.log();
 
